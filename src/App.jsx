@@ -2,6 +2,7 @@ import Navbar from './components/Navbar';
 import Header from './components/Header';
 import Statistics from './components/Statistics/index';
 import BoostLink from './components/BoostLink';
+import Footer from './components/Footer';
 import './styles/index.scss';
 
 function App() {
@@ -11,7 +12,7 @@ function App() {
       <Header />
       <Statistics />
       <BoostLink />
-      <div style={{ marginBottom: ' 1000px' }}></div>
+      <Footer />
     </div>
   );
 }

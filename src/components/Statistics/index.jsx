@@ -11,6 +11,7 @@ const Statistics = () => {
         title={item.title}
         subtitle={item.subtitle}
         icon={item.icon}
+        key={index}
       />
     </>
   );
