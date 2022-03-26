@@ -1,0 +1,24 @@
+.title-with-desc {
+  @include flexCenter;
+  flex-direction: column;
+  text-align: center;
+
+  h1,
+  p {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 40px;
+    color: $very-dark-violet;
+  }
+
+  p {
+    color: $gray;
+    margin: 25px 0;
+  }
+}
+
+.small {
+  background-color: red;
+}

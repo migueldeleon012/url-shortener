@@ -6,24 +6,4 @@
     height: 300px;
     margin-bottom: 20px;
   }
-
-  &__content {
-    @include flexCenter;
-    flex-direction: column;
-    text-align: center;
-
-    h1,
-    p {
-      width: 90%;
-    }
-
-    h1 {
-      color: $very-dark-violet;
-    }
-
-    p {
-      color: $gray;
-      margin: 15px 0;
-    }
-  }
 }

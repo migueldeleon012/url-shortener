@@ -1,4 +1,5 @@
 import illustrationWorking from '../../assets/illustration-working.svg';
+import TitleWDesc from '../TitleWDesc';
 
 const Header = () => {
   return (
@@ -8,14 +9,10 @@ const Header = () => {
         alt="illustration working"
         className="illustration-logo"
       />
-      <div className="header__content">
-        <h1>More than just shorter links</h1>
-        <p>
-          Build your brand's recognition and get detailed insights on how your
-          links are performing
-        </p>
-        <button className="btn-default">get started</button>
-      </div>
+      <TitleWDesc
+        title="More than just shorter links"
+        subtitle="Build your brand's recognition and get detailed insights on how your links are performing"
+      />
     </div>
   );
 };
