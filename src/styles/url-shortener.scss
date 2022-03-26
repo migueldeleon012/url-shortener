@@ -2,8 +2,7 @@
   @include flexEvenly;
   flex-direction: column;
   height: 150px;
-  background: $very-dark-violet url('../assets/bg-shorten-mobile.svg') no-repeat
-    130% -10px;
+  background: $dark-violet url('../assets/bg-shorten-mobile.svg') no-repeat 130% -10px;
   border-radius: $border-radius;
   width: 85%;
   position: absolute;
