@@ -1,0 +1,60 @@
+//primary colors
+$cyan: hsl(180, 66%, 49%);
+$dark-violet: hsl(257, 27%, 26%);
+$red: hsl(0, 87%, 67%);
+
+//shades
+$gray: hsl(0, 0%, 75%);
+$grayish-violet: hsl(257, 7%, 63%);
+$very-dark-blue: hsl(255, 11%, 22%);
+$very-dark-violet: hsl(260, 8%, 14%);
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+//mixins
+@mixin flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flexEvenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+//global
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 35px;
+}
+
+a,
+button,
+p {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+div,
+nav,
+header {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+@import './navbar.scss';
+@import './header.scss';

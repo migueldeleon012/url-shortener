@@ -1,0 +1,38 @@
+.header {
+  width: 100%;
+
+  .illustration-logo {
+    height: 300px;
+    margin-bottom: 20px;
+  }
+
+  &__content {
+    @include flexCenter;
+    flex-direction: column;
+    text-align: center;
+
+    h1,
+    p {
+      width: 90%;
+    }
+
+    h1 {
+      color: $very-dark-violet;
+    }
+
+    p {
+      color: $gray;
+      margin: 15px 0;
+    }
+
+    button {
+      background-color: $cyan;
+      border: none;
+      padding: 15px 40px;
+      border-radius: 100px;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: white;
+    }
+  }
+}
