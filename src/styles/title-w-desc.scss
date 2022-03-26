@@ -2,6 +2,7 @@
   @include flexCenter;
   flex-direction: column;
   text-align: center;
+  width: 100%;
 
   h1,
   p {
@@ -23,6 +24,13 @@
   }
 }
 
-.small {
-  background-color: red;
+.title-with-desc.small {
+  h1 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 14px;
+    margin: 15px 0;
+  }
 }

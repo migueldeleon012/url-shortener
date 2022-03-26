@@ -3,7 +3,7 @@ import TitleWDesc from '../TitleWDesc';
 
 const Header = () => {
   return (
-    <div className="header">
+    <header className="header">
       <img
         src={illustrationWorking}
         alt="illustration working"
@@ -16,7 +16,7 @@ const Header = () => {
         />
         <button className="btn-default">get started</button>
       </div>
-    </div>
+    </header>
   );
 };
 

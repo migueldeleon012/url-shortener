@@ -3,10 +3,44 @@
   background-color: lighten($gray, 20%);
   position: relative;
   overflow: visible;
+  padding-bottom: 50px;
 
-  .statistics__content {
+  &__content {
     .spacer {
-      margin-top: 150px;
+      margin: 150px 0 50px 0;
+      padding-top: 200px;
+      width: 100%;
     }
+  }
+
+  &__card {
+    width: 90%;
+    position: relative;
+    overflow: visible;
+    background-color: white;
+    margin: 0 auto;
+
+    .icon-container {
+      background-color: $very-dark-violet;
+      width: 80px;
+      height: 80px;
+      @include flexCenter;
+      border-radius: 50%;
+      position: absolute;
+      top: -40px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .card-content {
+      padding-top: 60px;
+    }
+  }
+
+  .greenline {
+    background-color: $cyan;
+    width: 10px;
+    height: 80px;
+    margin: 0 auto;
   }
 }
