@@ -6,4 +6,9 @@
     height: 300px;
     margin-bottom: 20px;
   }
+
+  &__content {
+    @include flexCenter;
+    flex-direction: column;
+  }
 }

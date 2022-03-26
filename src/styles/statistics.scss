@@ -1,6 +1,12 @@
 .statistics {
   margin-top: 120px;
-  background-color: lighten($gray, 15%);
+  background-color: lighten($gray, 20%);
   position: relative;
   overflow: visible;
+
+  .statistics__content {
+    .spacer {
+      margin-top: 150px;
+    }
+  }
 }

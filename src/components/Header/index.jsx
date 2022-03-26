@@ -9,10 +9,13 @@ const Header = () => {
         alt="illustration working"
         className="illustration-logo"
       />
-      <TitleWDesc
-        title="More than just shorter links"
-        subtitle="Build your brand's recognition and get detailed insights on how your links are performing"
-      />
+      <div className="header__content">
+        <TitleWDesc
+          title="More than just shorter links"
+          subtitle="Build your brand's recognition and get detailed insights on how your links are performing"
+        />
+        <button className="btn-default">get started</button>
+      </div>
     </div>
   );
 };
