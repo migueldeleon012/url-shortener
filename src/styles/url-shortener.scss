@@ -1,0 +1,29 @@
+.url-shortener {
+  @include flexEvenly;
+  flex-direction: column;
+  height: 150px;
+  background: $very-dark-violet url('../assets/bg-shorten-mobile.svg') no-repeat
+    130% -10px;
+  border-radius: $border-radius;
+  width: 85%;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+
+  input {
+    padding: 3px 5px;
+    width: 100%;
+  }
+
+  button {
+    font-weight: 700;
+    color: white;
+    background-color: $cyan;
+    border: none;
+    border-radius: 3px;
+    padding: 5px;
+    width: 100%;
+  }
+}

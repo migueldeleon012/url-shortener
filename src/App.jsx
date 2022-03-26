@@ -1,5 +1,6 @@
-import Navbar from './components/Navbar/index';
-import Header from './components/Header/index';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import Statistics from './components/Statistics/index';
 import './styles/index.scss';
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <div className="App">
       <Navbar />
       <Header />
+      <Statistics />
     </div>
   );
 }

@@ -9,6 +9,9 @@ $grayish-violet: hsl(257, 7%, 63%);
 $very-dark-blue: hsl(255, 11%, 22%);
 $very-dark-violet: hsl(260, 8%, 14%);
 
+//other fixed values
+$border-radius: 10px;
+
 //fonts
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
@@ -24,6 +27,12 @@ $very-dark-violet: hsl(260, 8%, 14%);
   justify-content: space-evenly;
   align-items: center;
 }
+
+//imports
+@import './navbar.scss';
+@import './header.scss';
+@import './url-shortener.scss';
+@import './statistics.scss';
 
 //global
 * {
@@ -44,7 +53,8 @@ h6 {
 
 a,
 button,
-p {
+p,
+input {
   font-size: 18px;
   font-weight: 500;
 }
@@ -56,5 +66,12 @@ header {
   overflow-x: hidden;
 }
 
-@import './navbar.scss';
-@import './header.scss';
+.btn-default {
+  background-color: $cyan;
+  border: none;
+  padding: 15px 40px;
+  border-radius: 100px;
+  text-transform: capitalize;
+  font-weight: bold;
+  color: white;
+}
