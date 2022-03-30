@@ -11,6 +11,10 @@
   width: calc(100% - 40px);
   padding: 20px;
 
+  .input-container {
+    width: 100%;
+  }
+
   input {
     padding: 3px 5px;
     width: 100%;
@@ -25,5 +29,33 @@
     font-size: 12px;
     align-self: flex-start;
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .url-shortener {
+    flex-direction: row;
+    width: calc(100% - 400px);
+    padding: 50px;
+    background: $dark-violet url('../assets/bg-shorten-desktop.svg') no-repeat;
+
+    .input-container {
+      margin-right: 10px;
+    }
+
+    button {
+      width: 150px;
+    }
+
+    button,
+    input {
+      padding: 10px;
+    }
+
+    .error-message {
+      transform: translateY(5px);
+      position: absolute;
+      font-size: 16px;
+    }
   }
 }

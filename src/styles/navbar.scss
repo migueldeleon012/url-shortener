@@ -74,6 +74,10 @@
       margin-bottom: 20px;
     }
   }
+
+  &__login {
+    text-align: center;
+  }
 }
 
 .navbar.active {
@@ -81,6 +85,63 @@
     &__content {
       height: 375px;
       opacity: 1;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .navbar {
+    height: 100px;
+
+    img {
+      margin-right: 20px;
+    }
+
+    &__burger {
+      display: none;
+    }
+
+    &__content {
+      position: static;
+      flex-direction: row;
+      padding: 0;
+      height: 100%;
+      border-radius: 0;
+      background-color: transparent;
+      flex: 1;
+      opacity: 1;
+      transform: translateX(0);
+
+      .hr {
+        display: none;
+      }
+
+      .items {
+        flex-direction: row;
+        justify-content: flex-start;
+        flex: 1;
+
+        .item {
+          margin: 0 10px;
+        }
+      }
+
+      .item {
+        a {
+          color: $gray;
+          font-weight: 500;
+        }
+      }
+    }
+
+    &__login {
+      @include flexCenter;
+      height: 70px;
+      gap: 20px;
+
+      button {
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -4,13 +4,31 @@ const TitleWDesc = (props) => {
   return (
     <div className={`title-with-desc ${props.allSmall && 'small'}`}>
       {props.title && (
-        <h1 className={props.isWhite && 'white'}>{props.title}</h1>
+        <h1
+          className={`${props.isWhite && 'white'} ${
+            props.isAlignedLeft ? 'align-left' : ''
+          }`}
+        >
+          {props.title}
+        </h1>
       )}
       {props.smallTitle && (
-        <h2 className={props.isWhite && 'white'}>{props.smallTitle}</h2>
+        <h2
+          className={`${props.isWhite && 'white'} ${
+            props.isAlignedLeft ? 'align-left' : ''
+          }`}
+        >
+          {props.smallTitle}
+        </h2>
       )}
       {props.subtitle && (
-        <p className={props.isWhite && 'white'}>{props.subtitle}</p>
+        <p
+          className={`${props.isWhite && 'white'} ${
+            props.isAlignedLeft ? 'align-left' : ''
+          }`}
+        >
+          {props.subtitle}
+        </p>
       )}
     </div>
   );

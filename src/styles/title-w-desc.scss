@@ -38,3 +38,28 @@
     margin: 15px 0;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .title-with-desc {
+    align-items: flex-start;
+
+    h1,
+    h2,
+    p {
+      width: 100%;
+    }
+
+    h1 {
+      font-size: 60px;
+      line-height: 70px;
+    }
+
+    h2 {
+      font-size: 35px;
+    }
+
+    .align-left {
+      text-align: left;
+    }
+  }
+}

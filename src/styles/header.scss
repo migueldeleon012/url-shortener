@@ -13,3 +13,22 @@
     flex-direction: column;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 120px 0 120px 200px;
+
+    .illustration-logo {
+      height: 550px;
+      transform: translateX(170px);
+    }
+
+    &__content {
+      width: 60ch;
+      align-items: flex-start;
+    }
+  }
+}

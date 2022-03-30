@@ -1,7 +1,18 @@
+import { useState, useEffect } from 'react';
 import illustrationWorking from '../../assets/illustration-working.svg';
 import TitleWDesc from '../TitleWDesc';
 
 const Header = () => {
+  const [alignLeft, setAlignLeft] = useState(window.outerWidth >= 1440);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setAlignLeft(window.outerWidth >= 1440);
+    };
+
+    window.addEventListener('resize', handleResize);
+  }, []);
+
   return (
     <header className="header">
       <img
@@ -13,6 +24,7 @@ const Header = () => {
         <TitleWDesc
           title="More than just shorter links"
           subtitle="Build your brand's recognition and get detailed insights on how your links are performing"
+          isAlignedLeft={alignLeft}
         />
         <button className="btn-default">get started</button>
       </div>

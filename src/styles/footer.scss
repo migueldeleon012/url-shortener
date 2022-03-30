@@ -28,3 +28,29 @@
     @include flexEvenly;
   }
 }
+
+@media screen and (min-width: 1440px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-top: 70px;
+
+    &__data {
+      @include flexEvenly;
+      align-items: flex-start;
+      flex: 1;
+    }
+
+    h2 {
+      margin: 0;
+      margin-right: 100px;
+      text-align: left;
+    }
+
+    .social-medias {
+      margin: 0;
+      width: 200px;
+    }
+  }
+}

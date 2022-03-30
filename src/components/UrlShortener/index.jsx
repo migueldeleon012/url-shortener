@@ -9,15 +9,18 @@ const UrlShortener = (props) => {
 
   return (
     <div className="url-shortener">
-      <input
-        type="text"
-        placeholder="Shorten a link here..."
-        className={props.errorMessage ? 'error-input' : null}
-        onChange={changeInputValue}
-      />
-      {props.errorMessage && (
-        <p className="error-message">{props.errorMessage}</p>
-      )}
+      <div className="input-container">
+        <input
+          type="text"
+          placeholder="Shorten a link here..."
+          className={props.errorMessage ? 'error-input' : null}
+          onChange={changeInputValue}
+        />
+        {props.errorMessage && (
+          <p className="error-message">{props.errorMessage}</p>
+        )}
+      </div>
+
       <button
         className="btn-secondary"
         type="submit"

@@ -99,6 +99,15 @@ ul {
   text-align: center;
 }
 
+@media screen and (min-width: 1440px) {
+  nav,
+  section,
+  footer {
+    padding-left: 200px !important;
+    padding-right: 200px !important;
+  }
+}
+
 //button animations
 
 @keyframes bounce {

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import axios from 'axios';
 import UrlShortener from '../UrlShortener';
 import TitleWDesc from '../TitleWDesc';
@@ -22,7 +22,6 @@ const Statistics = () => {
           setError('Error, please try again later.');
           return;
         }
-        console.log(res);
         setUrlState([
           ...urlState,
           {
@@ -58,21 +57,23 @@ const Statistics = () => {
   );
 
   return (
-    <div className="statistics">
+    <section className="statistics">
       <UrlShortener getShortUrl={getShortUrl} errorMessage={error} />
       {urlState.length ? (
         <div className="short-urls">{urlState.map(renderUrls)}</div>
       ) : null}
       <div className="statistics__content">
         <div className={`spacer ${!urlState.length ? 'empty' : null}`}>
-          <TitleWDesc
-            smallTitle="Advanced Statistics"
-            subtitle="Track how your links are performing across the web with our advanced statistics dashboard"
-          />
+          <div className="statistics__head">
+            <TitleWDesc
+              smallTitle="Advanced Statistics"
+              subtitle="Track how your links are performing across the web with our advanced statistics dashboard"
+            />
+          </div>
         </div>
         <div className="cards-container">{cardDetails.map(renderCards)}</div>
       </div>
-    </div>
+    </section>
   );
 };
 

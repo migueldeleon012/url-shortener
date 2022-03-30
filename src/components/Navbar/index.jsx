@@ -2,7 +2,7 @@ import { useState } from 'react';
 import logo from '../../assets/logo.svg';
 
 const Navbar = () => {
-  const [isNavActive, setIsNavActive] = useState(true);
+  const [isNavActive, setIsNavActive] = useState(false);
 
   const onBurgerPress = () => setIsNavActive(!isNavActive);
 
@@ -27,10 +27,12 @@ const Navbar = () => {
           </li>
         </ul>
         <div className="hr"></div>
-        <p className="item">
-          <a href="#">Login</a>
-        </p>
-        <button className="btn-default">Sign Up</button>
+        <div className="navbar__login">
+          <p className="item">
+            <a href="#">Login</a>
+          </p>
+          <button className="btn-default">Sign Up</button>
+        </div>
       </div>
     </nav>
   );

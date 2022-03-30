@@ -1,6 +1,17 @@
+import { useEffect, useState } from 'react';
 import TitleWDesc from '../../TitleWDesc';
 
 const StatisticsCard = (props) => {
+  const [alignLeft, setAlignLeft] = useState(window.outerWidth >= 1440);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setAlignLeft(window.outerWidth >= 1440);
+    };
+
+    window.addEventListener('resize', handleResize);
+  }, []);
+
   return (
     <div className="statistics__card">
       <div className="icon-container">
@@ -18,6 +29,7 @@ const StatisticsCard = (props) => {
             title={props.title}
             subtitle={props.subtitle}
             allSmall={true}
+            isAlignedLeft={alignLeft}
           />
         )}
       </div>

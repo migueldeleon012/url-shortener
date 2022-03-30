@@ -23,8 +23,10 @@ const index = () => {
 
   return (
     <footer className="footer">
-      <TitleWDesc smallTitle="Shortly" isWhite />
-      {footerData.map(renderFooterData)}
+      <div className="footer__logo">
+        <TitleWDesc smallTitle="Shortly" isWhite />
+      </div>
+      <div className="footer__data">{footerData.map(renderFooterData)}</div>
       <div className="social-medias">{socialMedia.map(renderSocialMedia)}</div>
     </footer>
   );

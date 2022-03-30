@@ -1,5 +1,5 @@
 .boost-link {
-  padding: 90px 25px;
+  padding: 70px 25px;
   background: $dark-violet url('../assets/bg-boost-mobile.svg') no-repeat top
     right;
   background-size: cover;
@@ -7,5 +7,11 @@
   .btn-default {
     width: 200px;
     margin: 20px auto 0 auto;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .boost-link {
+    background: $dark-violet url('../assets/bg-boost-desktop.svg') no-repeat top;
   }
 }
