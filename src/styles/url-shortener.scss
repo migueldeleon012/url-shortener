@@ -4,11 +4,11 @@
   height: 150px;
   background: $dark-violet url('../assets/bg-shorten-mobile.svg') no-repeat 130% -10px;
   border-radius: $border-radius;
-  width: 85%;
   position: absolute;
-  top: -50px;
+  top: -75px;
   left: 50%;
   transform: translateX(-50%);
+  width: calc(100% - 40px);
   padding: 20px;
 
   input {
@@ -16,13 +16,14 @@
     width: 100%;
   }
 
-  button {
-    font-weight: 700;
-    color: white;
-    background-color: $cyan;
-    border: none;
-    border-radius: 3px;
-    padding: 5px;
-    width: 100%;
+  .error-input {
+    border: 2px solid $red;
+  }
+
+  .error-message {
+    color: $red;
+    font-size: 12px;
+    align-self: flex-start;
+    margin-bottom: 10px;
   }
 }

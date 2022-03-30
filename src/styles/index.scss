@@ -73,13 +73,46 @@ header {
   overflow-x: hidden;
 }
 
+ul {
+  list-style: none;
+}
+
 .btn-default {
   background-color: $cyan;
   border: none;
-  padding: 15px 40px;
+  padding: 10px 40px;
   border-radius: 100px;
   text-transform: capitalize;
   text-align: center;
   font-weight: bold;
   color: white;
+}
+
+.btn-secondary {
+  font-weight: 700;
+  color: white;
+  background-color: $cyan;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+}
+
+//button animations
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
