@@ -4,7 +4,9 @@ import { footerData, socialMedia } from './data';
 const index = () => {
   const renderFooterItems = (item, index) => (
     //no href because it's dummy
-    <a key={index}>{item.data}</a>
+    <a href="#footer" key={index}>
+      {item.data}
+    </a>
   );
 
   const renderFooterData = (item, index) => (
@@ -21,7 +23,7 @@ const index = () => {
   );
 
   return (
-    <footer className="footer">
+    <footer className="footer" id="footer">
       <div className="footer__logo">
         <TitleWDesc smallTitle="Shortly" isWhite />
       </div>

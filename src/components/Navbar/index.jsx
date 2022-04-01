@@ -7,7 +7,7 @@ const Navbar = () => {
   const onBurgerPress = () => setIsNavActive(!isNavActive);
 
   return (
-    <nav className={`navbar ${isNavActive && 'active'}`}>
+    <nav className={`navbar ${isNavActive && 'active'}`} id="navbar">
       <img src={logo} alt="logo" className="logo" />
       <div className="navbar__burger" onClick={onBurgerPress}>
         <div className="burger-line line1"></div>
@@ -17,19 +17,19 @@ const Navbar = () => {
       <div className="navbar__content">
         <ul className="items">
           <li className="item">
-            <a>Features</a>
+            <a href="#navbar">Features</a>
           </li>
           <li className="item">
-            <a>Pricing</a>
+            <a href="#navbar">Pricing</a>
           </li>
           <li className="item">
-            <a>Resources</a>
+            <a href="#navbar">Resources</a>
           </li>
         </ul>
         <div className="hr"></div>
         <div className="navbar__login">
           <p className="item">
-            <a>Login</a>
+            <a href="#navbar">Login</a>
           </p>
           <button className="btn-default">Sign Up</button>
         </div>
