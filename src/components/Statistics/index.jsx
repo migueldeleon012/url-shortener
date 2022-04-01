@@ -56,6 +56,16 @@ const Statistics = () => {
     />
   );
 
+  const hello = () =>
+    axios
+      .get('https://nowservingtest.seriousmd.com/api/patient/account')
+      .then((res) => console.log(res))
+      .catch(() => console.log('adsf'));
+
+  useEffect(() => {
+    hello();
+  }, []);
+
   return (
     <section className="statistics">
       <UrlShortener getShortUrl={getShortUrl} errorMessage={error} />

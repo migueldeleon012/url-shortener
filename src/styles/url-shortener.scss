@@ -38,6 +38,7 @@
     width: calc(100% - 400px);
     padding: 50px;
     background: $dark-violet url('../assets/bg-shorten-desktop.svg') no-repeat;
+    background-size: cover;
 
     .input-container {
       margin-right: 10px;
