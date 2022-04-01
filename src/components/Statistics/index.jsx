@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import UrlShortener from '../UrlShortener';
 import TitleWDesc from '../TitleWDesc';
@@ -29,6 +29,7 @@ const Statistics = () => {
             shortLink: res.data.result.short_link,
           },
         ]);
+        setError(null);
       })
       .catch(() => {
         setError('URL invalid, please re-check entered URL.');
@@ -37,15 +38,14 @@ const Statistics = () => {
   };
 
   const renderCards = (item, index) => (
-    <>
+    <React.Fragment key={index}>
       {index !== 0 && <div className="greenline"></div>}
       <StatisticsCard
         title={item.title}
         subtitle={item.subtitle}
         icon={item.icon}
-        key={index}
       />
-    </>
+    </React.Fragment>
   );
 
   const renderUrls = (item, index) => (
@@ -55,16 +55,6 @@ const Statistics = () => {
       key={index}
     />
   );
-
-  const hello = () =>
-    axios
-      .get('https://nowservingtest.seriousmd.com/api/patient/account')
-      .then((res) => console.log(res))
-      .catch(() => console.log('adsf'));
-
-  useEffect(() => {
-    hello();
-  }, []);
 
   return (
     <section className="statistics">
