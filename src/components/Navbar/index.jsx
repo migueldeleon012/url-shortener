@@ -17,19 +17,19 @@ const Navbar = () => {
       <div className="navbar__content">
         <ul className="items">
           <li className="item">
-            <a href="#">Features</a>
+            <a>Features</a>
           </li>
           <li className="item">
-            <a href="#">Pricing</a>
+            <a>Pricing</a>
           </li>
           <li className="item">
-            <a href="#">Resources</a>
+            <a>Resources</a>
           </li>
         </ul>
         <div className="hr"></div>
         <div className="navbar__login">
           <p className="item">
-            <a href="#">Login</a>
+            <a>Login</a>
           </p>
           <button className="btn-default">Sign Up</button>
         </div>

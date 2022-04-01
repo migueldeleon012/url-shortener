@@ -3,7 +3,8 @@ import { footerData, socialMedia } from './data';
 
 const index = () => {
   const renderFooterItems = (item, index) => (
-    <a href={item.href} key={index}>
+    //no href because it's dummy
+    <a key={index} target="blank">
       {item.data}
     </a>
   );
@@ -16,7 +17,7 @@ const index = () => {
   );
 
   const renderSocialMedia = (item, index) => (
-    <a href={item.href} key={index}>
+    <a href={item.href} key={index} target="_blank">
       <img src={item.icon} alt={item.media} />
     </a>
   );

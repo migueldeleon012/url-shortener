@@ -35,21 +35,21 @@ export const socialMedia = [
   {
     medium: 'Facebook',
     icon: facebookIcon,
-    href: '#',
+    href: 'https://www.facebook.com',
   },
   {
     medium: 'Twitter',
     icon: twitterIcon,
-    href: '#',
+    href: 'https://www.twitter.com',
   },
   {
     medium: 'Pinterest',
     icon: pinterestIcon,
-    href: '#',
+    href: 'https://www.pinterest.com',
   },
   {
     medium: 'Instagram',
     icon: instagramIcon,
-    href: '#',
+    href: 'https://www.instagram.com',
   },
 ];
