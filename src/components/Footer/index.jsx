@@ -21,9 +21,9 @@ const index = () => {
       href={item.href}
       key={index}
       rel="noreferrer"
-      aria-label={`Social Media link of ${item.media}`}
+      aria-label={`Social Media link of ${item.medium}`}
     >
-      <img src={item.icon} alt={item.media} />
+      <img src={item.icon} alt={item.medium} />
     </a>
   );
 
