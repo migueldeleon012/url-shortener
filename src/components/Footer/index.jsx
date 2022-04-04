@@ -31,7 +31,7 @@ const index = () => {
     <footer className="footer" id="footer" role="contentinfo">
       <div className="footer__content">
         <div className="footer__logo">
-          <TitleWDesc smallTitle="Shortly" isWhite />
+          <TitleWDesc title="Shortly" isWhite />
         </div>
         <div className="footer__data">{footerData.map(renderFooterData)}</div>
         <div className="social-medias">

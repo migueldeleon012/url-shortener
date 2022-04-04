@@ -66,7 +66,7 @@ const Statistics = () => {
         <div className={`spacer ${!urlState.length ? 'empty' : null}`}>
           <div className="statistics__head">
             <TitleWDesc
-              smallTitle="Advanced Statistics"
+              title="Advanced Statistics"
               subtitle="Track how your links are performing across the web with our advanced statistics dashboard"
             />
           </div>
