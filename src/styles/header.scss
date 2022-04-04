@@ -6,6 +6,10 @@
   .illustration-logo {
     height: 350px;
     margin-bottom: 30px;
+
+    img {
+      height: 100%;
+    }
   }
 
   &__content {
@@ -14,16 +18,24 @@
   }
 }
 
+@media screen and (min-width: 425px) {
+  .header .illustration-logo {
+    transform: translateX(0);
+    width: 100%;
+    @include flexCenter;
+  }
+}
+
 @media screen and (min-width: 1024px) {
   .header {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
-    padding: 120px 0 120px 200px;
+    padding: 120px 0;
+    margin: 0 auto;
 
     .illustration-logo {
-      height: 400px;
-      transform: translateX(170px);
+      height: 350px;
     }
     &__content {
       width: 70ch;
@@ -33,10 +45,6 @@
 
 @media screen and(min-width: 1440px) {
   .header {
-    .illustration-logo {
-      height: 520px;
-      transform: translateX(170px);
-    }
     &__content {
       min-width: 45ch;
       align-items: flex-start;

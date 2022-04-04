@@ -3,7 +3,7 @@ import React from 'react';
 const TitleWDesc = (props) => {
   return (
     <div className={`title-with-desc ${props.allSmall && 'small'}`}>
-      {props.title && (
+      {props.isMain && props.title && (
         <h1
           className={`${props.isWhite && 'white'} ${
             props.isAlignedLeft ? 'align-left' : ''
@@ -12,14 +12,23 @@ const TitleWDesc = (props) => {
           {props.title}
         </h1>
       )}
-      {props.smallTitle && (
+      {props.title && !props.isMain && (
         <h2
           className={`${props.isWhite && 'white'} ${
             props.isAlignedLeft ? 'align-left' : ''
           }`}
         >
-          {props.smallTitle}
+          {props.title}
         </h2>
+      )}
+      {props.smallTitle && (
+        <h3
+          className={`${props.isWhite && 'white'} ${
+            props.isAlignedLeft ? 'align-left' : ''
+          }`}
+        >
+          {props.smallTitle}
+        </h3>
       )}
       {props.subtitle && (
         <p
