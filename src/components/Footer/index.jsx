@@ -17,13 +17,18 @@ const index = () => {
   );
 
   const renderSocialMedia = (item, index) => (
-    <a href={item.href} key={index} rel="noreferrer">
+    <a
+      href={item.href}
+      key={index}
+      rel="noreferrer"
+      aria-label={`Social Media link of ${item.media}`}
+    >
       <img src={item.icon} alt={item.media} />
     </a>
   );
 
   return (
-    <footer className="footer" id="footer">
+    <footer className="footer" id="footer" role="content information">
       <div className="footer__content">
         <div className="footer__logo">
           <TitleWDesc smallTitle="Shortly" isWhite />

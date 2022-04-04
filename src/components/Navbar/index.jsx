@@ -7,7 +7,11 @@ const Navbar = () => {
   const onBurgerPress = () => setIsNavActive(!isNavActive);
 
   return (
-    <nav className={`navbar ${isNavActive && 'active'}`} id="navbar">
+    <nav
+      className={`navbar ${isNavActive && 'active'}`}
+      id="navbar"
+      role="navigation"
+    >
       <div className="navbar__content">
         <img src={logo} alt="logo" className="logo" />
         <div className="navbar__burger" onClick={onBurgerPress}>
