@@ -14,7 +14,7 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header" role="main">
+    <header className="header" role="banner">
       <div className="illustration-logo">
         <img src={illustrationWorking} alt="illustration working" />
       </div>
