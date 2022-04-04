@@ -57,7 +57,7 @@ const Statistics = () => {
   );
 
   return (
-    <section className="statistics" role="information">
+    <section className="statistics" role="region">
       <UrlShortener getShortUrl={getShortUrl} errorMessage={error} />
       {urlState.length ? (
         <div className="short-urls">{urlState.map(renderUrls)}</div>

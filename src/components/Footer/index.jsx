@@ -28,7 +28,7 @@ const index = () => {
   );
 
   return (
-    <footer className="footer" id="footer" role="content information">
+    <footer className="footer" id="footer" role="contentinfo">
       <div className="footer__content">
         <div className="footer__logo">
           <TitleWDesc smallTitle="Shortly" isWhite />
