@@ -11,7 +11,7 @@ const index = () => {
 
   const renderFooterData = (item, index) => (
     <div key={index} className="footer__item">
-      <h4>{item.title}</h4>
+      <h3>{item.title}</h3>
       {item.items.map(renderFooterItems)}
     </div>
   );
@@ -24,11 +24,15 @@ const index = () => {
 
   return (
     <footer className="footer" id="footer">
-      <div className="footer__logo">
-        <TitleWDesc smallTitle="Shortly" isWhite />
+      <div className="footer__content">
+        <div className="footer__logo">
+          <TitleWDesc smallTitle="Shortly" isWhite />
+        </div>
+        <div className="footer__data">{footerData.map(renderFooterData)}</div>
+        <div className="social-medias">
+          {socialMedia.map(renderSocialMedia)}
+        </div>
       </div>
-      <div className="footer__data">{footerData.map(renderFooterData)}</div>
-      <div className="social-medias">{socialMedia.map(renderSocialMedia)}</div>
     </footer>
   );
 };

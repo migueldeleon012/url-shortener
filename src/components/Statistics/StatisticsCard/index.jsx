@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import TitleWDesc from '../../TitleWDesc';
 
 const StatisticsCard = (props) => {
-  const [alignLeft, setAlignLeft] = useState(window.outerWidth >= 1440);
+  const [alignLeft, setAlignLeft] = useState(window.outerWidth >= 1024);
 
   useEffect(() => {
     const handleResize = () => {
-      setAlignLeft(window.outerWidth >= 1440);
+      setAlignLeft(window.outerWidth >= 1024);
     };
 
     window.addEventListener('resize', handleResize);
