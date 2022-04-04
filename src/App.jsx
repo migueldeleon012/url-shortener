@@ -7,7 +7,7 @@ import './styles/index.scss';
 
 function App() {
   return (
-    <div className="App" role="main">
+    <div className="App">
       <Navbar />
       <Header />
       <Statistics />
