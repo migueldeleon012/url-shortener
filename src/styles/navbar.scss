@@ -4,16 +4,19 @@
   height: 70px;
   position: fixed;
   z-index: 10000;
+  overflow: visible;
 
   .logo {
-    margin-left: 5px;
+    margin-left: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-40%);
   }
 
   &__content {
     background-color: inherit;
     display: flex;
     align-items: center;
-    overflow: visible;
     z-index: 1000;
     width: 100%;
   }

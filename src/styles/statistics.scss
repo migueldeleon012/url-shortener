@@ -79,10 +79,31 @@
     margin: 0 auto;
   }
 }
+@media screen and (min-width: 1024px) {
+  .statistics {
+    flex-direction: column;
+  }
+  .short-urls {
+    width: 100%;
+  }
+}
 
 @media screen and (min-width: 1440px) {
   .statistics {
     padding-bottom: 150px;
+
+    .short-urls {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      width: 1100px;
+      margin-bottom: 100px;
+
+      .url-card {
+        flex-grow: 1;
+        min-width: 45%;
+      }
+    }
 
     .cards-container {
       position: relative;
