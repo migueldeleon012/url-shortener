@@ -3,14 +3,12 @@
   width: 100vw;
   height: 70px;
   position: fixed;
+  display: flex;
   z-index: 10000;
   overflow: visible;
 
   .logo {
     margin-left: 15px;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-40%);
   }
 
   &__content {
